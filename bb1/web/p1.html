@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container {margin:0 auto; width:960px; }
+            </style>
+            <!--<frameset rows="40%,*">
+                  <frame src="/bb1/a.html">
+                      <frameset cols="20%,*">
+                          <frame src="/bb1/b.html">
+                          <frame src="/bb1/c.html">
+                      </frameset>
+              </frameset>-->
+            <script>
+                var request;
+                var restext;
+                function search()
+                {
+                     var v=document.vinform.city.value;
+                     var v1=document.vform.City.value;
+                     var v2=document.viform.t1.value;
+                     var url="/bb1/jsp/search.jsp?val="+v;
+                     if(window.XMLHttpRequest)
+                {
+                    request=new XMLHttpRequest();
+                }
+                else
+                {
+                    request=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                request.onreadystatechange=getInfo;
+                request.open("GET",url,true);
+                request.send();
+                }
+                function getInfo()
+                {
+                    if(request.readyState==4)
+                {
+                    var val=request.responseText;
+                    document.getElementById('tab').innerHTML=val;
+                }
+                }
+                </script>
+    </head>
+   <body >
+       <img src="/bb1/images/im4.PNG" height="300" width="1350" />
+       <table align="left" border="0" width="270">
+           <tr>
+               <td><a href="/bb1/p1.html" style="text-decoration: none">Home</a></td>
+           </tr>
+           <tr>
+               <td><a href="/bb1/login.html" style="text-decoration: none">Login</a>
+           </tr>
+           <tr>
+               <td><a href="/bb1/registration.html" style="text-decoration: none">Registration</a></td>
+           </tr>
+           <tr>
+               <td>About Us </td>
+           </tr>
+           <tr>
+               <td>Contact us </td>
+           </tr>
+       </table>
+       <table align="left" border="0" width="800">
+           <tr>
+               <td><h1 align="right">Search Bus</h1></td>
+           </tr>
+           <tr>
+               <td valign="left">From City: <br><form name="vinform">
+               <select name="city">
+                   <option value="1">Ahmedabad</option>
+                   <option value="2">Bhubaneshwar</option>
+                   <option value="3">Guhawati</option>
+               </select>
+           </form>
+                   
+            </td>
+           <td valign="center">To City: <br><form name="vform">
+               <select name="City">
+                   <option value="1">Ahmedabad</option>
+                   <option value="2">Bhubaneshwar</option>
+                   <option value="3">Guhawati</option>
+               </select>
+           </form>
+           </tr>
+           
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="viform">
+                       Enter Date: <br><input type="text" name="t1" value="">dd/mm/yyyy
+                   </form>
+               </td>
+               <td valign="center"><br><br><br>
+                   <form name="viform1">
+                       <input type="submit" value="Bus search" onclick="search()">
+                   </form>
+                   
+               </td>
+           </tr>
+       </table>
+       
+   </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <table align="left" border="0" width="270">
+        <tr>
+            <td><a href="/bb1/addbus.html" style="text-decoration: none">Add Bus</a></td>
+           </tr>
+           <br>
+           <tr>
+               <td>Add Pickup Stand</td>
+           </tr>
+           <tr>
+               <td>View Report</td>
+           </tr>
+           <tr>
+               <td>Logout</td>
+           </tr>
+       </table>
+         <a href="/bb1/upn.html">Update News</a> | <a href="/bb1/chnpw.html">Change Password</a> | <a href="/bb1/ud.html">User Details</a> | <a href="/bb1/vf.html">View Feedback</a> 
+         <br><br>
+         <table align="left" border="0" width="1000">
+         <tr>
+               <td valign="left"><br><br>
+                   <form name="codeform">
+                       Bus Code: <br><input type="text" name="tt1" value="">
+                   </form>
+               </td>
+           </tr>
+           
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="noform">
+                       Bus Number: <br><input type="text" name="tt2" value="">
+                   </form>
+               </td>
+           </tr>
+           
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="typeform">
+                       Bus Type: <br><input type="text" name="tt3" value="">
+                   </form>
+               </td>
+           </tr>
+           
+          <tr>
+               <td valign="left"><br>Total No of Seats: <form name="seatsform">
+               <select name="noseats">
+                   <option value="1">30</option>
+                   <option value="2">40</option>
+                   <option value="3">50</option>
+               </select>
+           </form>
+            </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="rowform">
+                       Seat Row: <br><input type="text" name="tt4" value="">
+                   </form>
+               </td>
+           </tr>
+             <tr> 
+           <td valign="left"><br><br>Seat Coloumns <br><form name="colform">
+               <select name="seatcol">
+                   <option value="1">10</option>
+                   <option value="2">12</option>
+                   <option value="3">14</option>
+               </select>
+           </form>
+           </tr>
+           
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="browform">
+                       Blank Row: <br><input type="text" name="tt5" value="">
+                   </form>
+               </td>
+           </tr>
+          
+           <td valign="right"><br><br><br>
+                   <form name="vset1">
+                       <input type="submit" value="Set" onclick="set()">
+                   </form>
+               <td valign="right"><br><br><br>
+                   <form name="vrset">
+                       <input type="submit" value="Reset" onclick="reset()">
+                   </form>
+            </td>
+           </tr>
+       </table>
+    </body>
+</html>

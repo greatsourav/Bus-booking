@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+               <img src="/bb1/images/im4.PNG" height="300" width="1350" />
+       <table align="left" border="0" width="270">
+        <tr>
+            <td><a href="/bb1/addbus.html" style="text-decoration: none">Add Bus</a></td>
+           </tr>
+           <br>
+           <tr>
+               <td>Add Pickup Stand</td>
+           </tr>
+           <tr>
+               <td>View Report</td>
+           </tr>
+           <tr>
+               <td>Logout</td>
+           </tr>
+       </table>
+         <a href="/bb1/upn.html">Update News</a> | <a href="/bb1/chnpw.html">Change Password</a> | <a href="/bb1/ud.html">User Details</a> | <a href="/bb1/vf.html">View Feedback</a> 
+         <br><br>
+         
+       <table align="left" border="0" width="300">
+           <tr>
+               <td valign="left">Route Name      : 
+               </td>
+               <td><!--<form name="rform">-->
+               <select name="route">
+                   <option value="1">ABD-BBS</option>
+                   <option value="2">BBS-GWH</option>
+                   <option value="3">GWH-PATNA</option>
+               </select>
+           <!--</form-->
+           </td>
+           </tr>
+           
+             <tr> 
+           <td valign="left"><br><br>Bus Number <br><form name="bno">
+               <select name="BusNum">
+                   <option value="1">gj-9a-111-01</option>
+                   <option value="2">bbs-10a-121-02</option>
+                   <option value="3">ghw-11a-131-03</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="dform">
+                       Date: <br><input type="text" name="t1" value="">dd/mm/yyyy
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="fform">
+                       Fare: <br><input type="text" name="t2" value="">
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="eform">
+                       Estimated Time: <br><input type="text" name="t3" value="">hr <input type="text" name="t4" value="">min
+                   </form>
+               </td>
+           </tr>
+            <tr> 
+           <td valign="left"><br><br>Arrival Time <br><form name="aform">
+               <select name="atime">
+                   <option value="1">08.00AM</option>
+                   <option value="2">09.00AM</option>
+                   <option value="3">10.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr> 
+           <td valign="left"><br><br>Departure Time <br><form name="dform">
+               <select name="dtime">
+                   <option value="1">05.00AM</option>
+                   <option value="2">06.00AM</option>
+                   <option value="3">07.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+           <td valign="right"><br><br><br>
+                   <form name="vset1">
+                       <input type="submit" value="Set" onclick="set()">
+                   </form>
+               <td valign="right"><br><br><br>
+       <table align="left" border="0" width="270">
+        <tr>
+            <td><a href="/bb1/addbus.html" style="text-decoration: none">Add Bus</a></td>
+           </tr>
+           <br>
+           <tr>
+               <td>Add Pickup Stand</td>
+           </tr>
+           <tr>
+               <td>View Report</td>
+           </tr>
+           <tr>
+               <td>Logout</td>
+           </tr>
+       </table>
+         <a href="/bb1/upn.html">Update News</a> | <a href="/bb1/chnpw.html">Change Password</a> | <a href="/bb1/ud.html">User Details</a> | <a href="/bb1/vf.html">View Feedback</a> 
+         <br><br>
+         
+       <table align="left" border="0" width="300">
+           <tr>
+               <td valign="left">Route Name      : 
+               </td>
+               <td><!--<form name="rform">-->
+               <select name="route">
+                   <option value="1">ABD-BBS</option>
+                   <option value="2">BBS-GWH</option>
+                   <option value="3">GWH-PATNA</option>
+               </select>
+           <!--</form-->
+           </td>
+           </tr>
+           
+             <tr> 
+           <td valign="left"><br><br>Bus Number <br><form name="bno">
+               <select name="BusNum">
+                   <option value="1">gj-9a-111-01</option>
+                   <option value="2">bbs-10a-121-02</option>
+                   <option value="3">ghw-11a-131-03</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="dform">
+                       Date: <br><input type="text" name="t1" value="">dd/mm/yyyy
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="fform">
+                       Fare: <br><input type="text" name="t2" value="">
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="eform">
+                       Estimated Time: <br><input type="text" name="t3" value="">hr <input type="text" name="t4" value="">min
+                   </form>
+               </td>
+           </tr>
+            <tr> 
+           <td valign="left"><br><br>Arrival Time <br><form name="aform">
+               <select name="atime">
+                   <option value="1">08.00AM</option>
+                   <option value="2">09.00AM</option>
+                   <option value="3">10.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr> 
+           <td valign="left"><br><br>Departure Time <br><form name="dform">
+               <select name="dtime">
+                   <option value="1">05.00AM</option>
+                   <option value="2">06.00AM</option>
+                   <option value="3">07.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+           <td valign="right"><br><br><br>
+                   <form name="vset1">
+                       <input type="submit" value="Set" onclick="set()">
+                   </form>
+               <td valign="right"><br><br><br>
+       <table align="left" border="0" width="270">
+        <tr>
+            <td><a href="/bb1/addbus.html" style="text-decoration: none">Add Bus</a></td>
+           </tr>
+           <br>
+           <tr>
+               <td>Add Pickup Stand</td>
+           </tr>
+           <tr>
+               <td>View Report</td>
+           </tr>
+           <tr>
+               <td>Logout</td>
+           </tr>
+       </table>
+         <a href="/bb1/upn.html">Update News</a> | <a href="/bb1/chnpw.html">Change Password</a> | <a href="/bb1/ud.html">User Details</a> | <a href="/bb1/vf.html">View Feedback</a> 
+         <br><br>
+         
+       <table align="left" border="0" width="300">
+           <tr>
+               <td valign="left">Route Name      : 
+               </td>
+               <td><!--<form name="rform">-->
+               <select name="route">
+                   <option value="1">ABD-BBS</option>
+                   <option value="2">BBS-GWH</option>
+                   <option value="3">GWH-PATNA</option>
+               </select>
+           <!--</form-->
+           </td>
+           </tr>
+           
+             <tr> 
+           <td valign="left"><br><br>Bus Number <br><form name="bno">
+               <select name="BusNum">
+                   <option value="1">gj-9a-111-01</option>
+                   <option value="2">bbs-10a-121-02</option>
+                   <option value="3">ghw-11a-131-03</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="dform">
+                       Date: <br><input type="text" name="t1" value="">dd/mm/yyyy
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="fform">
+                       Fare: <br><input type="text" name="t2" value="">
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="eform">
+                       Estimated Time: <br><input type="text" name="t3" value="">hr <input type="text" name="t4" value="">min
+                   </form>
+               </td>
+           </tr>
+            <tr> 
+           <td valign="left"><br><br>Arrival Time <br><form name="aform">
+               <select name="atime">
+                   <option value="1">08.00AM</option>
+                   <option value="2">09.00AM</option>
+                   <option value="3">10.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr> 
+           <td valign="left"><br><br>Departure Time <br><form name="dform">
+               <select name="dtime">
+                   <option value="1">05.00AM</option>
+                   <option value="2">06.00AM</option>
+                   <option value="3">07.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+           <td valign="right"><br><br><br>
+                   <form name="vset1">
+                       <input type="submit" value="Set" onclick="set()">
+                   </form>
+               <td valign="right"><br><br><br>
+       <table align="left" border="0" width="270">
+        <tr>
+            <td><a href="/bb1/addbus.html" style="text-decoration: none">Add Bus</a></td>
+           </tr>
+           <br>
+           <tr>
+               <td>Add Pickup Stand</td>
+           </tr>
+           <tr>
+               <td>View Report</td>
+           </tr>
+           <tr>
+               <td>Logout</td>
+           </tr>
+       </table>
+         <a href="/bb1/upn.html">Update News</a> | <a href="/bb1/chnpw.html">Change Password</a> | <a href="/bb1/ud.html">User Details</a> | <a href="/bb1/vf.html">View Feedback</a> 
+         <br><br>
+         
+       <table align="left" border="0" width="300">
+           <tr>
+               <td valign="left">Route Name      : 
+               </td>
+               <td><!--<form name="rform">-->
+               <select name="route">
+                   <option value="1">ABD-BBS</option>
+                   <option value="2">BBS-GWH</option>
+                   <option value="3">GWH-PATNA</option>
+               </select>
+           <!--</form-->
+           </td>
+           </tr>
+           
+             <tr> 
+           <td valign="left"><br><br>Bus Number <br><form name="bno">
+               <select name="BusNum">
+                   <option value="1">gj-9a-111-01</option>
+                   <option value="2">bbs-10a-121-02</option>
+                   <option value="3">ghw-11a-131-03</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="dform">
+                       Date: <br><input type="text" name="t1" value="">dd/mm/yyyy
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="fform">
+                       Fare: <br><input type="text" name="t2" value="">
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="eform">
+                       Estimated Time: <br><input type="text" name="t3" value="">hr <input type="text" name="t4" value="">min
+                   </form>
+               </td>
+           </tr>
+            <tr> 
+           <td valign="left"><br><br>Arrival Time <br><form name="aform">
+               <select name="atime">
+                   <option value="1">08.00AM</option>
+                   <option value="2">09.00AM</option>
+                   <option value="3">10.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr> 
+           <td valign="left"><br><br>Departure Time <br><form name="dform">
+               <select name="dtime">
+                   <option value="1">05.00AM</option>
+                   <option value="2">06.00AM</option>
+                   <option value="3">07.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+           <td valign="right"><br><br><br>
+                   <form name="vset1">
+                       <input type="submit" value="Set" onclick="set()">
+                   </form>
+               <td valign="right"><br><br><br>
+       <table align="left" border="0" width="270">
+        <tr>
+            <td><a href="/bb1/addbus.html" style="text-decoration: none">Add Bus</a></td>
+           </tr>
+           <br>
+           <tr>
+               <td>Add Pickup Stand</td>
+           </tr>
+           <tr>
+               <td>View Report</td>
+           </tr>
+           <tr>
+               <td>Logout</td>
+           </tr>
+       </table>
+         <a href="/bb1/upn.html">Update News</a> | <a href="/bb1/chnpw.html">Change Password</a> | <a href="/bb1/ud.html">User Details</a> | <a href="/bb1/vf.html">View Feedback</a> 
+         <br><br>
+         
+       <table align="left" border="0" width="300">
+           <tr>
+               <td valign="left">Route Name      : 
+               </td>
+               <td><!--<form name="rform">-->
+               <select name="route">
+                   <option value="1">ABD-BBS</option>
+                   <option value="2">BBS-GWH</option>
+                   <option value="3">GWH-PATNA</option>
+               </select>
+           <!--</form-->
+           </td>
+           </tr>
+           
+             <tr> 
+           <td valign="left"><br><br>Bus Number <br><form name="bno">
+               <select name="BusNum">
+                   <option value="1">gj-9a-111-01</option>
+                   <option value="2">bbs-10a-121-02</option>
+                   <option value="3">ghw-11a-131-03</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="dform">
+                       Date: <br><input type="text" name="t1" value="">dd/mm/yyyy
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="fform">
+                       Fare: <br><input type="text" name="t2" value="">
+                   </form>
+               </td>
+           </tr>
+           <tr>
+               <td valign="left"><br><br>
+                   <form name="eform">
+                       Estimated Time: <br><input type="text" name="t3" value="">hr <input type="text" name="t4" value="">min
+                   </form>
+               </td>
+           </tr>
+            <tr> 
+           <td valign="left"><br><br>Arrival Time <br><form name="aform">
+               <select name="atime">
+                   <option value="1">08.00AM</option>
+                   <option value="2">09.00AM</option>
+                   <option value="3">10.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr> 
+           <td valign="left"><br><br>Departure Time <br><form name="dform">
+               <select name="dtime">
+                   <option value="1">05.00AM</option>
+                   <option value="2">06.00AM</option>
+                   <option value="3">07.00AM</option>
+               </select>
+           </form>
+           </tr>
+           <tr>
+           <td valign="right"><br><br><br>
+                   <form name="vset1">
+                       <input type="submit" value="Set" onclick="set()">
+                   </form>
+               <td valign="right"><br><br><br>
+                   <form name="vrset">
+                       <input type="submit" value="Reset" onclick="reset()">
+                   </form>
+            </td>
+           </tr>
+       </table>
+    </body>
+</html>
