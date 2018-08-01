@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body vlink="black">
+       <style>
+.mySlides {display:none;}
+</style>
+<table>
+    <tr><td>
+<div class="slides" style="max-width:350px">
+    <img class="mySlides" src="im1.png" style="width:100%" height="180px">
+  <img class="mySlides" src="im4.png" style="width:100%" height="180px">
+  <img class="mySlides" src="im3.png" style="width:100%" height="180px">
+</div>
+    </td><td> <img src="rts.png" width="175%" height="180px"/></td></tr>
+     
+</table>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); 
+}
+</script>
+ <table align="left" border="0" width="100" >
+            <tr>
+                <td><a href="/Bus/home.html" style="text-decoration: none">Home</a></td>
+            </tr>
+            <tr>
+                <td><a href="/Bus/login.html" style="text-decoration: none">Login</a></td>
+            </tr>
+            <tr>
+                <td><a href="/Bus/Registration.html" style="text-decoration: none">Registration</a></td>
+            </tr>
+            <tr>
+                <td><a href="/Bus/AboutUs.html" style="text-decoration: none">About Us</a></td>
+            </tr>
+            <tr>
+                <td><a href="/Bus/ContactUs.html" style="text-decoration: none">Contact Us</a></td>
+            </tr>
+        </table>
+        <table align="center" width="800">
+            <tr><td>
+                You have logged out successfully !!<br></td></td>
+                <tr><td>
+                <a href="/Bus/home.html">Go To Home</a><br>
+                 
+            </td>
+            </tr>
+        </table>
+    </body>
+</html>

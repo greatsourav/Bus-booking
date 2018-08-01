@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+        <title>Royal Transportation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    </head>  
+  <body bgcolor="orange">   
+<style>
+.mySlides {display:none;}
+</style>
+
+
+<table>
+    <tr><td>
+<div class="slides" style="max-width:350px">
+  <img class="mySlides" src="im1.png" style="width:100%" height="180px">
+  <img class="mySlides" src="im4.png" style="width:100%" height="180px">
+  <img class="mySlides" src="im3.png" style="width:100%" height="180px">
+</div>
+    </td><td> <img src="rts.png" width="175%" height="180px"/></td></tr>
+     
+</table>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); 
+}
+</script>
+
+
+        <table align="left" border="0" width="100" >
+            <tr>
+                <td><a href="home.jsp" style="text-decoration: none">Home</a></td>
+            </tr>
+            <tr>
+                <td><a href="log.jsp" style="text-decoration: none">Login</a></td>
+            </tr>
+            <tr>
+                <td><a href="Registration.html" style="text-decoration: none">Registration</a></td>
+            </tr>
+            <tr>
+                <td><a href="ContactUs.html" style="text-decoration: none">Contact Us</a></td>
+            </tr>
+        </table>
+  <br><br>
+<table  border='2px' style='padding: 10px;' height="300px" width="700px" align="center">
+    
+    <tr><td><font color="red" size="28"> Email :</font></td><td><font size="10"> support@travelbus.com</font></td>
+    </tr><tr><td><font color="blue" size="28"> Reg. Address :</font></td><td><font  size="10"> 46 , Karol Bagh<br>RTS Building <br>New Delhi-110256</font></td></tr>
+   <tr><td><font color="green" size="28"> Contact No. :</font></td><td><font size="10"> 1800-343-256</font></td></tr>
+</table>
+    </body>
+</html>
