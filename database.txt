@@ -1,0 +1,92 @@
+create table
+ Reg_Master (
+Reg_id varchar(5) Primary Key,
+First_Name varchar(10),
+Last_Name varchar(8),
+User_Name varchar(30),Password varchar(20),Type varchar(10),Email varchar(30),
+Address varchar(60),
+City varchar(10),
+Pincode varchar(6),
+Contact_No varchar(10)
+
+);
+
+
+insert into Reg_Master values('01','sourav','tiwari','sourav','admin1','admin','tsourav12@gmail.com','12maharaja Block _rampur','Delhi','110024',9835123456);
+
+
+
+create table Booking_Master(Book_id number(5),Reg_id number(8),Bus_route varchar(8),F_Name varchar(8),L_Name varchar(8),DOJ varchar(15),Fare number(5),Email varchar(30),Contact_no varchar(10),from_place varchar(8),to_place varchar(8),book_date varchar(10),Seat_no  varchar(6),bus_no varchar(15),arrival varchar(15),departure varchar(15));
+
+insert into Booking_Master values('103',2,'pat-rnc','AMit','mishra','23-jan-2017',720,'amishra12@gmail.com',7531122008,'patna','ranchi','20-01-2017','1');
+
+create table  Log_Master(u_id number(5),User_Name varchar(30),Password varchar(20),Type varchar(10));
+
+create table Feedback(F_id number(5),User_name varchar(30),rating number(1),Feedback varchar(80),DOJ varchar(10));
+
+insert into feedback values(2,'Amit','4','journey was awesome','23-01-2017');
+
+create table Bus_Master (Bus_id number(6), Bus_No varchar(20),Bus_Type varchar(20),Total_Seat number(3),From_place varchar(20),To_place varchar(20),Day varchar(8),Route_Name varchar(20) ,Base_Fare number(4),Estimated_Time varchar(20), Departure_Time varchar(20),Arrival_Time varchar(20),Estimated_Distance number(4));
+------------	
+insert into Bus_master values('2341','34','volvo',80,'patna','ranchi','Monday','pat-rnc',700,'6.30','7:20','13:50','300');
+insert into Bus_master values('2018','01','volvo (a/c)',72,'patna','dhanbad','Monday','pat-dbd',323,'5.30','23:20','4:50','750');
+insert into Bus_master values('2028','02','luxury',72,'patna','kolkata','Saturday','pat-kol',880,'10.0','19:00','5:00','1100');
+insert into Bus_master values('2038','03','semiluxury',56,'patna','Tata','Saturday','pat-tata',325,'6.0','22:00','4:00','600');
+------------
+insert into Bus_master values('3451','45','normal',80,'ranchi','dhanbad','Monday','rnc-dbd',184,'4.4','8:00','12:40','400');
+insert into Bus_master values('3461','46','volvo',80,'ranchi','kolkata','Tuesday','rnc-kol',700,'6.30','10:20','16:50','900');
+insert into Bus_master values('3471','47','normal',80,'ranchi','Tata','Monday','rnc-tata',112,'3.20','15:20','18:40','300');
+------------
+insert into Bus_master values('4127','12','semiluxury',56,'Tata','patna','Sunday','tata-pat',325,'6.0','10:10','16:10','600');
+insert into Bus_master values('4137','13','volvo (a/c)',72,'Tata','kolkata','Saturday','tata-kol',290,'4.50','7:00','11:50','460');
+insert into Bus_master values('4147','14','semiluxury',56,'Tata','dhanbad','Friday','tata-dbd',113,'3.0','15:10','18:10','300');
+insert into Bus_master values('4157','15','normal',47,'Tata','ranchi','Sunday','tata-rnc',112,'3.20','14:10','17:30','300');
+-------------
+insert into Bus_master values('7058','05','luxury',60,'kolkata','patna','Sunday','kol-pat',880,'10.0','9:20','19:20','1100');
+insert into Bus_master values('7068','06','volvo',72,'kolkata','ranchi','Friday','kol-rnc',780,'8.50','10:20','19:10','800');
+insert into Bus_master values('7088','08','volvo (a/c)',72,'kolkata','Tata','Wednesday','kol-tata',670,'7.0','11:20','18:20','650');
+insert into Bus_master values('7088','08','volvo (a/c)',72,'kolkata','dhanbad','Sunday','kol-dbd',800,'8.0','8:00','16:00','400');
+------------
+insert into Bus_master values('8088','88','volvo (a/c)',72,'dhanbad','Tata','Monday','dbd-tata',113,'3.30','10:00','13:30','450');
+insert into Bus_master values('8089','09','volvo (a/c)',72,'dhanbad','patna','Tuesday','dbd-pat',323,'5.30','11:50','17:20','750');
+insert into Bus_master values('8087','07','volvo (a/c)',72,'dhanbad','ranchi','Wednesday','dbd-rnc',154,'4.0','12:10','16:10','650');
+-------------
+
+ 1 BOOK_ID                                            NUMBER(5)
+ 2REG_ID                                             NUMBER(8)
+ 3BUS_ROUTE                                          VARCHAR2(8)
+ 4F_NAME                                             VARCHAR2(8)
+ 5L_NAME                                             VARCHAR2(8)
+ 6DOJ                                                VARCHAR2(15)
+ 7FARE                                               NUMBER(5)
+8 EMAIL                                              VARCHAR2(30)
+9 CONTACT_NO                                         VARCHAR2(10)
+10 FROM_PLACE                                         VARCHAR2(8)
+ 11TO_PLACE                                           VARCHAR2(8)
+ 12BOOK_DATE                                          VARCHAR2(10)
+ 13SEAT_NO                                            VARCHAR2(6)
+ 14BUS_NO                                             VARCHAR2(3)
+ 15ARRIVAL                                            VARCHAR2(5)
+ 16DEPARTURE                                          VARCHAR2(6)
+
+
+
+ 1.BUS_ID                                             NUMBER(6)
+ 2.BUS_NO                                             VARCHAR2(20)
+ 3.BUS_TYPE                                           VARCHAR2(20)
+ 4.TOTAL_SEAT                                         NUMBER(3)
+ 5.FROM_PLACE                                         VARCHAR2(20)
+ 6.TO_PLACE                                           VARCHAR2(20)
+ 7.DAY                                                VARCHAR2(10)
+ 8.ROUTE_NAME                                         VARCHAR2(20)
+ 9.BASE_FARE                                          NUMBER(4)
+ 10.ESTIMATED_TIME                                     VARCHAR2(20)
+ 11.DEPARTURE_TIME                                     VARCHAR2(20)
+ 12.ARRIVAL_TIME                                       VARCHAR2(20)
+ 13.ESTIMATED_DISTANCE                                 NUMBER(4)
+
+inesrt into bus_master values (2351,35,'semiluxury',72,'patna','ranchi','Monday','pat-rnc',700,'6:30','17:35','18:00',300);
+
+create table trnsctn(transaction number(10),reg_id number(10),booki_id number(10),amount number(5));
+
+insert into trnsctn values(2264418450,1,103,700);
